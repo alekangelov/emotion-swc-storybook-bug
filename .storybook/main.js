@@ -3,6 +3,8 @@ module.exports = {
     "../**/*.stories.mdx",
     "../**/*.stories.@(js|jsx|ts|tsx)"
   ],
+  core: { builder: 'webpack5' },
+
   "addons": [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
@@ -10,20 +12,13 @@ module.exports = {
     {
       name: 'storybook-addon-swc',
       options: {
-        enable: true,
-        enableSwcLoader: true,
-        enableSwcMinify: true,
         swcLoaderOptions: {
           jsc: {
             experimental: {
               plugins: [
                 [
-                  "emotion-swc-plugin",
-                  {
-                    sourceMap: true,
-                    autoLabel: 'dev-only',
-                    labelFormat: '[local]',
-                  },
+                  "@swc/plugin-emotion",
+                  {}
                 ],
               ],
             },

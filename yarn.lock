@@ -2670,6 +2670,11 @@
   dependencies:
     tslib "^2.4.0"
 
+"@swc/plugin-emotion@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@swc/plugin-emotion/-/plugin-emotion-2.1.0.tgz#8b61586a1e29a1b6368f9adc856af8ffc63f9a87"
+  integrity sha512-qB3VVFvDelhXRykquR2Pl8L2G5f0MllViKE+EzTakf+IJmowvJ+KcArCV3IjoOM6c87ltPwHkFS80s+5fPlHAg==
+
 "@swc/wasm@1.2.122":
   version "1.2.122"
   resolved "https://registry.yarnpkg.com/@swc/wasm/-/wasm-1.2.122.tgz#87a5e654b26a71b2e84b801f41e45f823b856639"
